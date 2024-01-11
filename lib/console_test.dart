@@ -1,7 +1,6 @@
 int calculateWarBudget() {
-  var startOfWar = DateTime.parse("2022-02-24 06:00:00");
-  print(startOfWar);
-  var now = DateTime.now();
-  print(now);
-  return now.difference(startOfWar).inHours;
+  final startOfWar = DateTime.parse("2022-02-24 06:00:00");
+  final now = DateTime.now();
+  final res1000x = now.difference(startOfWar).inHours;
+  return (res1000x/1000).round();
 }
